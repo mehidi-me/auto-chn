@@ -9,36 +9,36 @@ const ScrollReveal = dynamic(() => import('scrollreveal'), { ssr: false });
 import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      ScrollReveal({
-        reset: false,
-        distance: "60px",
-        duration: 1200,
-        delay: 30,
-      });
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     ScrollReveal({
+  //       reset: false,
+  //       distance: "60px",
+  //       duration: 1200,
+  //       delay: 30,
+  //     });
 
-      // Set up ScrollReveal for various elements
-      ScrollReveal().reveal("main .content h1", {
-        delay: 10,
-        origin: "bottom",
-      });
-      ScrollReveal().reveal("main .content h2", {
-        delay: 50,
-        origin: "bottom",
-      });
-      ScrollReveal().reveal("main .content button", {
-        delay: 50,
-        origin: "bottom",
-      });
-      ScrollReveal().reveal(".title-1 h2", { delay: 10, origin: "bottom" });
-      ScrollReveal().reveal(".title-1 p", { delay: 50, origin: "bottom" });
-      ScrollReveal().reveal(".feature .ico", { delay: 30, origin: "left" });
-      ScrollReveal().reveal(".feature h5", { delay: 90, origin: "left" });
-      ScrollReveal().reveal(".form-card", { delay: 50, origin: "bottom" });
-      ScrollReveal().reveal("footer .wraper", { delay: 50, origin: "bottom" });
-    }
-  }, []);
+  //     // Set up ScrollReveal for various elements
+  //     ScrollReveal().reveal("main .content h1", {
+  //       delay: 10,
+  //       origin: "bottom",
+  //     });
+  //     ScrollReveal().reveal("main .content h2", {
+  //       delay: 50,
+  //       origin: "bottom",
+  //     });
+  //     ScrollReveal().reveal("main .content button", {
+  //       delay: 50,
+  //       origin: "bottom",
+  //     });
+  //     ScrollReveal().reveal(".title-1 h2", { delay: 10, origin: "bottom" });
+  //     ScrollReveal().reveal(".title-1 p", { delay: 50, origin: "bottom" });
+  //     ScrollReveal().reveal(".feature .ico", { delay: 30, origin: "left" });
+  //     ScrollReveal().reveal(".feature h5", { delay: 90, origin: "left" });
+  //     ScrollReveal().reveal(".form-card", { delay: 50, origin: "bottom" });
+  //     ScrollReveal().reveal("footer .wraper", { delay: 50, origin: "bottom" });
+  //   }
+  // }, []);
   return (
     <div>
       <Header />
