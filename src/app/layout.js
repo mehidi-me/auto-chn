@@ -1,6 +1,6 @@
 import "./globals.css";
 
-
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
   title: "Create Next App",
@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
       <head>
       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
       </head>
+      <GoogleTagManager gtmId="GTM-XYZ" />
       <body>
         {children}
       </body>

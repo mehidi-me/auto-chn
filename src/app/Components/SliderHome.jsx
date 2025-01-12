@@ -7,7 +7,7 @@ import Slider from "react-slick";
 function SliderHome() {
   var settings = {
     infinite: false,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     variableWidth: true,
     arrows: false,

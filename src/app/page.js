@@ -1,14 +1,45 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 import SliderHome from "./Components/SliderHome";
 import Header from "./Components/Header";
 import Features from "./Components/Features";
 import FormContact from "./Components/FormContact";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      ScrollReveal({
+        reset: false,
+        distance: "60px",
+        duration: 1200,
+        delay: 30,
+      });
+
+      // Set up ScrollReveal for various elements
+      ScrollReveal().reveal("main .content h1", {
+        delay: 10,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal("main .content h2", {
+        delay: 50,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal("main .content button", {
+        delay: 50,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".title-1 h2", { delay: 10, origin: "bottom" });
+      ScrollReveal().reveal(".title-1 p", { delay: 50, origin: "bottom" });
+      ScrollReveal().reveal(".feature .ico", { delay: 30, origin: "left" });
+      ScrollReveal().reveal(".feature h5", { delay: 90, origin: "left" });
+      ScrollReveal().reveal(".form-card", { delay: 50, origin: "bottom" });
+      ScrollReveal().reveal("footer .wraper", { delay: 50, origin: "bottom" });
+    }
+  }, []);
   return (
     <div>
-     <Header />
+      <Header />
       <main>
         <video src="/images/bg.mp4" className="bg" autoPlay loop muted />
         <div className="container">
@@ -18,12 +49,16 @@ export default function Home() {
                 Discover the ultimate electric vehicle <br />
                 <span>Xiaomi SU7</span>
               </h1>
-              <button>
-                <i className="uil uil-shopping-bag" /> Buy now
-              </button>
+              <a href="https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123">
+                <button>
+                  <i className="uil uil-shopping-bag" /> Buy now
+                </button>
+              </a>
             </center>
             <div className="cta">
-              <button className="line">Contact us for more info</button>
+              <a href="#contactus">
+                <button className="line">Contact us for more info</button>
+              </a>
               <h2>
                 Xiaomi SU7, the latest addition to our electric vehicle lineup,
                 brings a whole new level of innovation and performance to the
@@ -35,9 +70,8 @@ export default function Home() {
       </main>
       <section className="bg pt-0">
         <SliderHome />
-        
       </section>
-      <section>
+      <section id="specs">
         <div className="container">
           <div className="title-1">
             <h2>Exploring Spesifications, Performance Product</h2>
@@ -47,10 +81,10 @@ export default function Home() {
               table.
             </p>
           </div>
-         <Features />
+          <Features />
         </div>
       </section>
-      <section>
+      <section id="contactus">
         <div className="container">
           <div className="form">
             <div className="form-card">
@@ -62,7 +96,7 @@ export default function Home() {
                 <h2>Auto-China invites YOU to join our journey!</h2>
               </div>
             </div>
-           <FormContact />
+            <FormContact />
           </div>
         </div>
       </section>
@@ -73,7 +107,9 @@ export default function Home() {
               m@auto-china.com
             </a>
             <div className="flex">
-              <button>Order now</button>
+              <a href="https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123">
+                <button>Buy now</button>
+              </a>
               <div className="social">
                 <a href="https://www.instagram.com/autochn">Instagram</a>
                 <a href="https://youtube.com/@auto-chn">YouTube</a>

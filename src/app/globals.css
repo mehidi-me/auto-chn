@@ -132,9 +132,9 @@ header .links a {
   transition: 0.3s;
   color: var(--secoundary);
 }
-header .links a:hover {
+/* header .links a:hover {
   color: var(--primary);
-}
+} */
 header .social i {
   width: 4rem;
   background: var(--secoundary);
@@ -511,6 +511,10 @@ input {
 footer {
   margin-top: 20rem;
   background: var(--bg);
+}
+footer button:hover{
+  background: rgb(40, 39, 39);
+  color: var(--secoundary);
 }
 footer .container .wraper {
   background: black;

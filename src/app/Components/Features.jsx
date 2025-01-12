@@ -96,9 +96,12 @@ function Features() {
                 <h3>{item.value}</h3>
               </div>
             ))}
-            <button className="load-more" onClick={() => toggleFeature(index)}>
-              {expandedFeatures[index] ? 'Show less' : 'View more'}
-            </button>
+            {feature.items.length > 3 && (
+               <button className="load-more" onClick={() => toggleFeature(index)}>
+               {expandedFeatures[index] ? 'Show less' : 'View more'}
+             </button>
+            )}
+           
           </div>
         </div>
       ))}

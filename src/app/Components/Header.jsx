@@ -6,14 +6,16 @@ function Header() {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 0);
-    };
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        setIsSticky(window.scrollY > 0);
+      };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   const toggleMenu = () => {
@@ -21,7 +23,9 @@ function Header() {
   };
 
   return (
-    <header className={`${isSticky ? "sticky" : ""} ${isMenuActive ? "active" : ""}`}>
+    <header
+      className={`${isSticky ? "sticky" : ""} ${isMenuActive ? "active" : ""}`}
+    >
       <div className="container">
         <div className="social">
           <a href="https://www.instagram.com/autochn">
@@ -43,12 +47,14 @@ function Header() {
           <a href="#" onClick={toggleMenu}>
             Home
           </a>
-          <a href="#" onClick={toggleMenu}>
+          <a href="#specs" onClick={toggleMenu}>
             Specs
           </a>
-          <button onClick={toggleMenu}>Contact us</button>
+          <a href="#contactus">
+            <button onClick={toggleMenu}>Contact us</button>
+          </a>
         </div>
-        <div className="toogle-menu"  onClick={toggleMenu}>
+        <div className="toogle-menu" onClick={toggleMenu}>
           <span />
           <span />
           <span />
