@@ -3,7 +3,9 @@ import SliderHome from "./SliderHome";
 import Header from "./Header";
 import Features from "./Features";
 import FormContact from "./FormContact";
-import ScrollReveal from "scrollreveal";
+import dynamic from 'next/dynamic';
+
+const ScrollReveal = dynamic(() => import('scrollreveal'), { ssr: false });
 import { useEffect } from "react";
 
 export default function Home() {
