@@ -155,19 +155,7 @@ export default function Home() {
             <div className="about">
               <h3>About Auto China</h3>
               <p>
-                Founded in 2010, Xiaomi Corporation has grown to become one of
-                the world’s leading tech companies, revolutionizing the
-                smartphone industry and expanding into AIoT (AI + IoT)
-                technology. With a vision to “Make friends with users and be the
-                coolest company in the users’ hearts,” Xiaomi has continuously
-                driven innovation and provided high-quality user experiences. As
-                of September 2024, Xiaomi has approximately 685.8 million
-                monthly active users and connects over 861 million smart devices
-                across its global platform. The company’s “Human × Car × Home”
-                ecosystem integrates personal devices, smart home products, and
-                cars to provide an unparalleled connected experience. Xiaomi is
-                committed to shaping the future of technology and improving
-                lives worldwide.
+              Auto China, with over 20 years of automotive expertise, is the fastest-growing car company in China, with a strong presence in Europe, the Middle East, and beyond. We lead the industry with sleek designs and innovative technology, creating cars that offer both luxury and smart features. Our commitment to excellence drives us to set new standards in performance and style, shaping the future of mobility. Experience the next level of automotive innovation with Auto China.
               </p>
             </div>
             <div className="copy">

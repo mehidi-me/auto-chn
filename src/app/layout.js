@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <head>
       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
       </head>
-      <GoogleTagManager gtmId="GTM-XYZ" />
+      <GoogleTagManager gtmId="GTM-M2V3XV4N" />
       <body>
         {children}
       </body>
