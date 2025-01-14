@@ -74,6 +74,7 @@ button,
   line-height: 1;
   transition: 0.3s;
 }
+
 button.line {
   background: none;
   border-radius: 0;
@@ -85,6 +86,11 @@ button.line {
 button:hover {
   background: var(--primary);
   border-color: transparent;
+}
+button.line:hover{
+  background: transparent;
+  border-bottom: 1px solid var(--secoundary);
+  padding-bottom: 1.5rem ;
 }
 button i {
   color: var(--secoundary);
@@ -834,6 +840,7 @@ footer .about h3 {
   }
   footer .social {
     gap: 1.5rem;
+    flex-direction: column;
   }
   footer .email {
     font-size: 2rem;
