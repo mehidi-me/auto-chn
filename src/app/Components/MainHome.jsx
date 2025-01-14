@@ -3,12 +3,16 @@ import SliderHome from "./SliderHome";
 import Header from "./Header";
 import Features from "./Features";
 import FormContact from "./FormContact";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const ScrollReveal = dynamic(() => import('scrollreveal'), { ssr: false });
+const ScrollReveal = dynamic(() => import("scrollreveal"), { ssr: false });
 import { useEffect } from "react";
+import { useParams } from "next/navigation";
+import { useTranslation } from "../i18n/client";
 
 export default function Home() {
+  const params = useParams();
+  const { t } = useTranslation(params?.lng);
   // useEffect(() => {
   //   if (typeof window !== "undefined") {
   //     ScrollReveal({
@@ -41,49 +45,44 @@ export default function Home() {
   // }, []);
   return (
     <div>
-      <Header />
+      <Header t={t} />
       <main>
         <video src="/images/bg.mp4" className="bg" autoPlay loop muted />
         <div className="container">
           <div className="content">
             <center>
               <h1>
-                Discover the ultimate electric vehicle <br />
-                <span>Xiaomi SU7</span>
+                {t("main.content.headline")} <br />
+                <span>{t("main.content.sub_headline")}</span>
               </h1>
               <a href="https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123">
                 <button>
-                  <i className="uil uil-shopping-bag" /> Buy now
+                  <i className="uil uil-shopping-bag" />{" "}
+                  {t("main.content.button.text")}
                 </button>
               </a>
             </center>
             <div className="cta">
               <a href="#contactus">
-                <button className="line">Contact us for more info</button>
+                <button className="line">
+                  {t("main.content.cta.button.text")}
+                </button>
               </a>
-              <h2>
-                Xiaomi SU7, the latest addition to our electric vehicle lineup,
-                brings a whole new level of innovation and performance to the
-                table.
-              </h2>
+              <h2>{t("main.content.cta.description")}</h2>
             </div>
           </div>
         </div>
       </main>
       <section className="bg pt-0">
-        <SliderHome />
+        <SliderHome t={t} />
       </section>
       <section id="specs">
         <div className="container">
           <div className="title-1">
-            <h2>Exploring Spesifications, Performance Product</h2>
-            <p>
-              Xiaomi SU7, the latest addition to our electric vehicle lineup,
-              brings a whole new level of innovation and performance to the
-              table.
-            </p>
+            <h2>{t("feaures_section.0.title")}</h2>
+            <p>{t("feaures_section.0.description")}</p>
           </div>
-          <Features />
+          <Features t={t} />
         </div>
       </section>
       <section id="contactus">
@@ -106,67 +105,98 @@ export default function Home() {
         <div className="container">
           <div className="wraper">
             <a className="email" href="mailto:m@auto-china.com">
-              m@auto-china.com
+              {t("footer.footer_email")}
             </a>
             <div className="flex">
               <a href="https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123">
-                <button>Buy now</button>
+                <button>{t("footer.order_button")}</button>
               </a>
               <div className="social">
-                <a href="https://www.instagram.com/autochn">Instagram</a>
-                <a href="https://youtube.com/@auto-chn">YouTube</a>
-                <a href="https://wa.me/+971585728686">WhatsApp</a>
+                <a href="https://www.instagram.com/autochn">
+                  {t("footer.social_instagram")}
+                </a>
+                <a href="https://youtube.com/@auto-chn">
+                  {t("footer.social_youtube")}
+                </a>
+                <a href="https://wa.me/+971585728686">
+                  {t("footer.social_whatsapp")}
+                </a>
               </div>
             </div>
           </div>
           <div className="bottom">
             <div className="location">
-              <a href="#">
-                <div className="item">
-                  <div className="name">
-                    <img src="/images/Flag_of_Germany.svg.png" alt="" />
-                    <h3>Germany</h3>
-                  </div>
-                  <p>Auto China GmbH Karlsplatz 3 80335 München</p>
+              <div className="item">
+                <div className="name">
+                  <img src="/images/Flag_of_Germany.svg.png" alt="" />
+                  <h3>{t("footer.location_germany_title")}</h3>
                 </div>
-              </a>
-              <a href="#">
-                <div className="item">
-                  <div className="name">
-                    <img src="/images/Flag_of_Switzerland.svg.png" alt="" />
-                    <h3>Switzerland</h3>
-                  </div>
-                  <p>Auto China AG Baarerstrasse 79 6300 Zug</p>
+                <a href="https://maps.app.goo.gl/5AoGaFv6e5GKWHUj6?g_st=ic">
+                  <p>{t("footer.location_germany_address")}</p>
+                </a>
+                <a href="tel:+49 89 215 2496 88">
+                  <b>+49 89 215 2496 88</b>
+                </a>
+              </div>
+
+              <div className="item">
+                <div className="name">
+                  <img src="/images/Flag_of_Switzerland.svg.png" alt="" />
+                  <h3>{t("footer.location_switzerland_title")}</h3>
                 </div>
-              </a>
-              <a href="#">
-                <div className="item">
-                  <div className="name">
-                    <img
-                      src="/images/Flag_of_the_United_Arab_Emirates.svg.png"
-                      alt=""
-                    />
-                    <h3>United Arab Emirates</h3>
-                  </div>
-                  <p>Auto China Umm Suqeim St - Al Quoz Dubai</p>
+                <a href="https://maps.app.goo.gl/7udUHDpkoPAfy3bd8?g_st=ic">
+                  <p>{t("footer.location_switzerland_address")}</p>
+                </a>
+                <a href="tel:+41 41 588 22 44">
+                  <b>+41 41 588 22 44</b>
+                </a>
+              </div>
+
+              <div className="item">
+                <div className="name">
+                  <img
+                    src="/images/Flag_of_the_United_Arab_Emirates.svg.png"
+                    alt=""
+                  />
+                  <h3>{t("footer.location_uae_title")}</h3>
                 </div>
-              </a>
+                <a href="https://maps.app.goo.gl/sCNcSyeBxQhr1x9r8?g_st=ic">
+                  <p>{t("footer.location_uae_address")}</p>
+                </a>
+                <a href="tel:+971 58 572 8686">
+                  <b>+971 58 572 8686
+                  </b>
+                </a>
+              </div>
             </div>
             <div className="about">
-              <h3>About Auto China</h3>
-              <p>
-              Auto China, with over 20 years of automotive expertise, is the fastest-growing car company in China, with a strong presence in Europe, the Middle East, and beyond. We lead the industry with sleek designs and innovative technology, creating cars that offer both luxury and smart features. Our commitment to excellence drives us to set new standards in performance and style, shaping the future of mobility. Experience the next level of automotive innovation with Auto China.
-              </p>
+              <h3>{t("footer.about_title")}</h3>
+              <p>{t("footer.about_description")} </p>
             </div>
+            <div className="trust">
+              <a href="https://g.co/kgs/nskqiQt" target="_blank">
+                <img src="images/google.png" alt="" />
+              </a>
+              <a
+                href="https://www.trustpilot.com/review/auto-china.com"
+                target="_blank"
+              >
+                <img src="images/Trustpilot Stars.svg" alt="" />
+              </a>
+              <a href="https://www.trustedshops.eu">
+                <img src="images/trusted.png" alt="" />
+              </a>
+            </div>
+
             <div className="copy">
               <p>
                 {" "}
-                © Copyright 2025 Auto-China.
-                <span>All rights reserved</span>
+                {t("footer.copyright_text")}
+                <span>{t("footer.copyright_reserved")}</span>
               </p>
               <div className="social">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms Of service</a>
+                <a href="#">{t("footer.privacy_policy")}</a>
+                <a href="#">{t("footer.terms_of_service")}</a>
               </div>
             </div>
           </div>

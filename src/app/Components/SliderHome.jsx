@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-function SliderHome() {
+function SliderHome({t}) {
   var settings = {
     infinite: false,
     slidesToShow: 2,
@@ -41,11 +41,9 @@ function SliderHome() {
           <div className="slider-card">
             <img src="/images/5.jpg" alt="" />
             <div className="content">
-              <h3>Refined Exterior</h3>
+              <h3>{t(`sections.0.slider.slides.0.title`)}</h3>
               <p>
-                The Xiaomi SU7 features sleek contours, a unique ducktail
-                spoiler, and a low-drag coefficient of 0.195, delivering both
-                striking design and peak efficiency.
+              {t(`sections.0.slider.slides.0.description`)}
               </p>
             </div>
           </div>
@@ -54,11 +52,9 @@ function SliderHome() {
           <div className="slider-card">
             <img src="/images/19.jpg" alt="" />
             <div className="content">
-              <h3>Comfortable and Smart Interior</h3>
+            <h3>{t(`sections.0.slider.slides.1.title`)}</h3>
               <p>
-                A symmetrical cabin with ergonomic elements, a tri-spoke
-                D-shaped steering wheel, and advanced HUD ensures comfort and
-                focused driving.
+              {t(`sections.0.slider.slides.1.description`)}
               </p>
             </div>
           </div>
@@ -67,11 +63,9 @@ function SliderHome() {
           <div className="slider-card">
             <img src="/images/8.jpg" alt="" />
             <div className="content">
-              <h3>Unmatched Performance</h3>
+            <h3>{t(`sections.0.slider.slides.2.title`)}</h3>
               <p>
-                With rapid 0-200 km/h acceleration in 10.67 seconds and
-                fast-charging capabilities offering up to 510 km in 15 minutes,
-                the Xiaomi SU7 redefines EV standards.
+              {t(`sections.0.slider.slides.2.description`)}
               </p>
             </div>
           </div>
@@ -80,10 +74,9 @@ function SliderHome() {
           <div className="slider-card">
             <img src="/images/14.jpg" alt="" />
             <div className="content">
-              <h3>Xiaomi Pilot Pro: Cutting-Edge Autonomous Driving</h3>
+            <h3>{t(`sections.0.slider.slides.3.title`)}</h3>
               <p>
-                Powered by 11 cameras and NVIDIA DRIVE Orin, Xiaomi Pilot Pro
-                ensures seamless and advanced autonomous driving experiences.
+              {t(`sections.0.slider.slides.3.description`)}
               </p>
             </div>
           </div>
@@ -92,11 +85,9 @@ function SliderHome() {
           <div className="slider-card">
             <img src="/images/15.jpg" alt="" />
             <div className="content">
-              <h3>Smart Cabin Technology: Human × Car × Home</h3>
+            <h3>{t(`sections.0.slider.slides.4.title`)}</h3>
               <p>
-                The 16.1-inch screen, 5-screen linkage, and support for Xiaomi
-                smart home devices create a connected, intuitive driving
-                ecosystem.
+              {t(`sections.0.slider.slides.4.description`)}
               </p>
             </div>
           </div>
@@ -105,10 +96,9 @@ function SliderHome() {
           <div className="slider-card">
             <img src="/images/4.jpg" alt="" />
             <div className="content">
-              <h3>Safety First</h3>
+            <h3>{t(`sections.0.slider.slides.5.title`)}</h3>
               <p>
-                A steel-aluminum alloy cage and 360° active safety systems
-                provide robust protection for unmatched peace of mind.
+              {t(`sections.0.slider.slides.5.description`)}
               </p>
             </div>
           </div>

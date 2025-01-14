@@ -1,0 +1,158 @@
+{
+    "header": {
+      "navigation": [
+        { "text": "Home" },
+        { "text": "Specs" },
+        { "text": "Accessories" },
+        { "text": "Order Now" }
+      ]
+    },
+    "main": {
+      "content": {
+        "headline": "Discover the ultimate electric vehicle",
+        "sub_headline": "Xiaomi SU7",
+        "button": { "text": "Buy now" },
+        "cta": {
+          "button": { "text": "Contact us for more info" },
+          "description": "Xiaomi SU7, the latest addition to our electric vehicle lineup, brings a whole new level of innovation and performance to the table."
+        }
+      }
+    },
+    "sections": [
+      {
+        "slider": {
+          "slides": [
+            {
+              "title": "Refined Exterior",
+              "description": "The Xiaomi SU7 features sleek contours, a unique ducktail spoiler, and a low-drag coefficient of 0.195, delivering both striking design and peak efficiency."
+            },
+            {
+              "title": "Comfortable and Smart Interior",
+              "description": "A symmetrical cabin with ergonomic elements, a tri-spoke D-shaped steering wheel, and advanced HUD ensures comfort and focused driving."
+            },
+            {
+              "title": "Unmatched Performance",
+              "description": "With rapid 0-200 km/h acceleration in 10.67 seconds and fast-charging capabilities offering up to 510 km in 15 minutes, the Xiaomi SU7 redefines EV standards."
+            },
+            {
+              "title": "Xiaomi Pilot Pro: Cutting-Edge Autonomous Driving",
+              "description": "Powered by 11 cameras and NVIDIA DRIVE Orin, Xiaomi Pilot Pro ensures seamless and advanced autonomous driving experiences."
+            },
+            {
+              "title": "Smart Cabin Technology: Human × Car × Home",
+              "description": "The 16.1-inch screen, 5-screen linkage, and support for Xiaomi smart home devices create a connected, intuitive driving ecosystem."
+            },
+            {
+              "title": "Safety First",
+              "description": "A steel-aluminum alloy cage and 360° active safety systems provide robust protection for unmatched peace of mind."
+            }
+          ]
+        }
+      }
+    ],
+    "feaures_section": [
+      {
+        "title": "Exploring Spesifications, Performance Product",
+        "description": "Xiaomi SU7, the latest addition to our electric vehicle lineup, brings a whole new level of innovation and performance to the table.",
+        "features": [
+          {
+            "category": "Performance",
+            "items": [
+              { "label": "Power", "value": "RWD 220 kW (295 hp)" },
+              { "label": "Torque", "value": "400 Nm (295 lb-ft)" },
+              { "label": "Acceleration", "value": "5.3 sec 0-100 km/h" },
+              { "label": "Max speed", "value": "210 km/h (130 mph)" }
+            ],
+            "button": { "text": "View more" }
+          },
+          {
+            "category": "Battery",
+            "items": [
+              { "label": "Capacity", "value": "73.6 kWh total" },
+              { "label": "Tech", "value": "Li-ion LFP battery (400V type)" },
+              { "label": "Range", "value": "668 km CLTC" },
+              { "label": "Recuperation", "value": "Yes" },
+              { "label": "Heat pump", "value": "Yes" }
+            ],
+            "button": { "text": "View more" }
+          },
+          {
+            "category": "Body",
+            "items": [
+              { "label": "Type", "value": "4 door sedan, 5 seats" },
+              { "label": "Platform", "value": "Modena" },
+              {
+                "label": "Dimensions",
+                "value": "4997 x 1963 x 1455 mm (196.7 x 77.3 x 57.3 in)"
+              },
+              { "label": "Drag coef", "value": "0.195 Cd" },
+              { "label": "Wheelbase", "value": "3000 mm (118.1 in)" },
+              { "label": "Weight", "value": "EU: 1980 kg unladen" },
+              { "label": "Suspension", "value": "Adaptive Air suspension" },
+              { "label": "Wheels", "value": "R19, R20" },
+              { "label": "Trunk", "value": "EU: 517 l" },
+              { "label": "Frunk", "value": "105 l" },
+              { "label": "Towing", "value": "Yes" }
+            ],
+            "button": { "text": "View more" }
+          },
+          {
+            "category": "Displays",
+            "items": [
+              { "label": "Center", "value": "16.1\" touchscreen" },
+              { "label": "Driver's", "value": "7.1\"" },
+              { "label": "Head-up", "value": "Yes" }
+            ],
+            "button": { "text": "View more" }
+          },
+          {
+            "category": "Comfort",
+            "items": [
+              { "label": "Seats", "value": "Heated and ventilated front seats" },
+              { "label": "Roof", "value": "Panoramic glass sunroof" },
+              {
+                "label": "Parking aids",
+                "value": "Front and rear sensors, 360 camera, reversing camera, Automatic Parking Assistance System"
+              }
+            ],
+            "button": { "text": "View more" }
+          },
+          {
+            "category": "Safety",
+            "items": [
+              {
+                "label": "Airbags",
+                "value": "Front, side, rear, head airbag system"
+              },
+              {
+                "label": "Driving aids",
+                "value": "1 LiDAR, 3 mmWave radars, 11 cameras, 12 sensors..."
+              },
+              { "label": "Self driving", "value": "Autonomous driving system" }
+            ],
+            "button": { "text": "View more" }
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "footer_email": "m@auto-china.com",
+      "order_button": "Order now",
+      "social_instagram": "Instagram",
+      "social_youtube": "YouTube",
+      "social_whatsapp": "WhatsApp",
+      "location_germany_title": "Germany",
+      "location_germany_address": "Auto China GmbH, Karlsplatz 3, 80335 München",
+      "location_switzerland_title": "Switzerland",
+      "location_switzerland_address": "Auto China AG, Baarerstrasse 79, 6300 Zug",
+      "location_uae_title": "United Arab Emirates",
+      "location_uae_address": "Auto China, Umm Suqeim St - Al Quoz, Dubai",
+      "about_title": "About Auto China",
+      "about_description": "Auto China, with over 20 years of automotive expertise, is the fastest-growing car company in China, with a strong presence in Europe, the Middle East, and beyond. We lead the industry with sleek designs and innovative technology, creating cars that offer both luxury and smart features. Our commitment to excellence drives us to set new standards in performance and style, shaping the future of mobility. Experience the next level of automotive innovation with Auto China.",
+      "copyright_text": "© Copyright 2025 Auto-China.",
+      "copyright_reserved": "All rights reserved",
+      "privacy_policy": "Privacy Policy",
+      "terms_of_service": "Terms Of Service"
+    }
+  }
+  

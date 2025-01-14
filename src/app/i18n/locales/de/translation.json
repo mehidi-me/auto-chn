@@ -1,0 +1,168 @@
+{
+    "header": {
+      "logo": { "url": "index.html", "img_src": "images/logo.png" },
+      "navigation": [
+        { "text": "Home" },
+        { "text": "Specs" },
+        { "text": "Accessories" },
+        { "text": "Jetzt kaufen" }
+      ]
+    },
+    "main": {
+      "content": {
+        "headline": "Entdecken Sie das ultimative Elektrofahrzeug",
+        "sub_headline": "Xiaomi SU7",
+        "button": { "text": "Jetzt kaufen" },
+        "cta": {
+          "button": { "text": "Kontaktieren Sie uns für weitere Informationen" },
+          "description": "Xiaomi SU7, die neueste Ergänzung unserer Elektrofahrzeugreihe, bringt ein völlig neues Maß an Innovation und Leistung."
+        }
+      }
+    },
+    "sections": [
+      {
+        "slider": {
+          "slides": [
+            {
+              "title": "Verfeinertes Exterieur",
+              "description": "Der Xiaomi SU7 besticht durch schlanke Konturen, einen einzigartigen Ducktail-Spoiler und einen niedrigen Luftwiderstandsbeiwert von 0,195, was sowohl ein auffälliges Design als auch höchste Effizienz bietet."
+            },
+            {
+              "title": "Komfortabler und intelligenter Innenraum",
+              "description": "Ein symmetrisches Cockpit mit ergonomischen Elementen, ein D-förmiges Dreispeichenlenkrad und ein fortschrittliches Head-up-Display sorgen für Komfort und ein fokussiertes Fahrerlebnis."
+            },
+            {
+              "title": "Unübertroffene Leistung",
+              "description": "Mit einer Beschleunigung von 0 auf 200 km/h in 10,67 Sekunden und Schnellladefähigkeiten, die bis zu 510 km Reichweite in 15 Minuten ermöglichen, setzt der Xiaomi SU7 neue Maßstäbe für Elektrofahrzeuge."
+            },
+            {
+              "title": "Xiaomi Pilot Pro: Modernstes autonomes Fahren",
+              "description": "Angetrieben von 11 Kameras und NVIDIA DRIVE Orin bietet Xiaomi Pilot Pro nahtlose und fortschrittliche autonome Fahrerlebnisse."
+            },
+            {
+              "title": "Intelligente Kabinentechnologie: Mensch × Auto × Zuhause",
+              "description": "Der 16,1-Zoll-Bildschirm, die Fünf-Bildschirm-Verknüpfung und die Unterstützung für Xiaomi Smart-Home-Geräte schaffen ein vernetztes, intuitives Fahrerlebnis."
+            },
+            {
+              "title": "Sicherheit an erster Stelle",
+              "description": "Ein Stahl-Aluminium-Legierungskäfig und 360°-aktive Sicherheitssysteme bieten robusten Schutz für unvergleichliche Sicherheit."
+            }
+          ]
+        }
+      }
+    ],
+    "feaures_section": [
+      {
+        "title": "Erkunden von Spezifikationen und Leistungsprodukten",
+        "description": "Xiaomi SU7, the latest addition to our electric vehicle lineup, brings a whole new level of innovation and performance to the table.",
+        "features": [
+          {
+            "category": "Leistung",
+            "items": [
+              { "label": "Leistung", "value": "Heckantrieb 220 kW (295 PS)" },
+              { "label": "Drehmoment", "value": "400 Nm" },
+              {
+                "label": "Beschleunigung",
+                "value": " 0-100 km/h in 5,3 Sekunden"
+              },
+              { "label": "Höchstgeschwindigkeit", "value": "210 km/h" }
+            ],
+            "button": { "text": "Mehr erfahren" }
+          },
+          {
+            "category": "Batterie",
+            "items": [
+              { "label": "Kapazität", "value": "73,6 kWh" },
+              {
+                "label": "Technologie",
+                "value": "Li-Ion LFP Batterie (400V Typ)"
+              },
+              { "label": "Reichweite", "value": "668 km CLTC" },
+              { "label": "Rekuperation", "value": "Ja" },
+              { "label": "Wärmepumpe", "value": "Ja" }
+            ],
+            "button": { "text": "Mehr erfahren" }
+          },
+          {
+            "category": "Karosserie",
+            "items": [
+              { "label": "Typ", "value": "4-Türer Limousine, 5 Sitze" },
+              { "label": "Plattform", "value": "Modena" },
+              {
+                "label": "Abmessungen",
+                "value": "4997 x 1963 x 1455 mm"
+              },
+              { "label": "Koeff ziehen", "value": "0.195 Cd" },
+              { "label": "Radstand", "value": "3000 mm" },
+              { "label": "Gewicht", "value": "1980 kg" },
+              { "label": "Federung", "value": "Adaptive Luftfederung" },
+              { "label": "Räder", "value": "R19, R20" },
+              { "label": "Kofferraum", "value": "EU: 517 l" },
+              { "label": "Frontkofferraum", "value": "105 l" },
+              { "label": "Anhängerkupplung", "value": "Ja" }
+            ],
+            "button": { "text": "Mehr erfahren" }
+          },
+          {
+            "category": "Displays",
+            "items": [
+              { "label": "Zentral", "value": "16.1\" touchscreen" },
+              { "label": "Fahrer", "value": "7.1\"" },
+              { "label": "Head-up-Display", "value": "Ja" }
+            ],
+            "button": { "text": "Mehr erfahren" }
+          },
+          {
+            "category": "Komfort",
+            "items": [
+              { "label": "Sitze", "value": "Beheizte und belüftete Vordersitze" },
+              { "label": "Dach", "value": "Panoramaglasdach" },
+              {
+                "label": "Parkhilfen",
+                "value": " Front- und Rücksensoren, 360°-Kamera, Rückfahrkamera, Automatisches Parkassistenzsystem"
+              }
+            ],
+            "button": { "text": "Mehr erfahren" }
+          },
+          {
+            "category": "Sicherheit",
+            "items": [
+              {
+                "label": "Airbags",
+                "value": "Front-, Seiten-, Heck- und Kopfairbagsystem"
+              },
+              {
+                "label": "Fahrhilfen",
+                "value": "1 LiDAR, 3 mmWave-Radare, 11 Kameras, 12 Sensoren. Vorwärts-/Rückwärts-/Seitlicher Kollisionsschutz, Spurzentrierung, Spurwechselassistent, Spurverlassenswarnung, Notbremsung mit Fußgänger- und Radfahrererkennung, Fernlichtassistent, Totwinkelwarnung, Türöffnungswarnung"
+              },
+              {
+                "label": "Autonomes Fahren",
+                "value": "Autonomes Fahrsystem"
+              }
+            ],
+            "button": { "text": "Mehr erfahren" }
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "footer_email": "m@auto-china.com",
+      "order_button": "Jetzt kaufen",
+      "social_instagram": "Instagram",
+      "social_youtube": "YouTube",
+      "social_whatsapp": "WhatsApp",
+      "location_germany_title": "Germany",
+      "location_germany_address": "Auto China GmbH, Karlsplatz 3, 80335 München",
+      "location_switzerland_title": "Schweiz",
+      "location_switzerland_address": "Auto China AG, Baarerstrasse 79, 6300 Zug",
+      "location_uae_title": "Vereinigte Arabische Emirate",
+      "location_uae_address": "Auto China, Umm Suqeim St - Al Quoz, Dubai",
+      "about_title": "Über Auto China",
+      "about_description": "Auto China, with over 20 years of automotive expertise, is the fastest-growing car company in China, with a strong presence in Europe, the Middle East, and beyond. We lead the industry with sleek designs and innovative technology, creating cars that offer both luxury and smart features. Our commitment to excellence drives us to set new standards in performance and style, shaping the future of mobility. Experience the next level of automotive innovation with Auto China.",
+      "copyright_text": "&copy; Copyright 2025 Auto-China.",
+      "copyright_reserved": "All rights reserved",
+      "privacy_policy": "Privacy Policy",
+      "terms_of_service": "Terms Of Service"
+    }
+  }
+  

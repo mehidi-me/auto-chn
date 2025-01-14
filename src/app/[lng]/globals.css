@@ -559,6 +559,27 @@ footer .bottom {
   flex-direction: column;
   gap: 5rem;
 }
+footer .location a {
+  color: var(--primary-text);
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
+}
+footer .location h3 {
+  font-size: 1.8rem;
+}
+.trust {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.trust img {
+  height: 5rem;
+}
+.trust h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
 .location {
   display: flex;
   align-items: flex-start;
@@ -849,5 +870,11 @@ footer .about h3 {
   }
   footer {
     margin-top: 10rem;
+  }
+  .trust {
+    justify-content: center;
+  }
+  .trust img{
+    height: 3rem;
   }
 }

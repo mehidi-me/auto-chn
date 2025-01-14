@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-function Features() {
+function Features({t}) {
   const [expandedFeatures, setExpandedFeatures] = useState({});
 
   const toggleFeature = (index) => {
@@ -82,7 +82,7 @@ function Features() {
             <div className="ico">
               <i className="uil uil-arrow-down-right" />
             </div>
-            <h5>{feature.title}</h5>
+            <h5>{t(`feaures_section.0.features.${index}.category`)}</h5>
           </div>
           <div className="list">
             {feature.items.map((item, itemIndex) => (
@@ -92,8 +92,8 @@ function Features() {
                 }`}
                 key={itemIndex}
               >
-                <p>{item.label}</p>
-                <h3>{item.value}</h3>
+                <p>{t(`feaures_section.0.features.${index}.items.${itemIndex}.label`)}</p>
+                <h3>{t(`feaures_section.0.features.${index}.items.${itemIndex}.value`)}</h3>
               </div>
             ))}
             {feature.items.length > 3 && (

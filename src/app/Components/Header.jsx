@@ -1,10 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-function Header() {
+
+export default  function Header({t}) {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuActive, setIsMenuActive] = useState(false);
-
+  
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleScroll = () => {
@@ -39,19 +40,22 @@ function Header() {
           </a>
         </div>
         <div className="logo">
-          <a href="index.html">
+          <a href="#">
             <img src="/images/logo.png" alt="Logo" />
           </a>
         </div>
         <div className="links">
           <a href="#" onClick={toggleMenu}>
-            Home
+            {t('header.navigation.0.text')}
           </a>
           <a href="#specs" onClick={toggleMenu}>
-            Specs
+          {t('header.navigation.1.text')}
+          </a>
+          <a href="https://shop.auto-china.com/" onClick={toggleMenu}>
+          {t('header.navigation.2.text')}
           </a>
           <a href="#contactus">
-            <button onClick={toggleMenu}>Contact us</button>
+            <button onClick={toggleMenu}> {t('header.navigation.3.text')}</button>
           </a>
         </div>
         <div className="toogle-menu" onClick={toggleMenu}>
@@ -64,4 +68,4 @@ function Header() {
   );
 }
 
-export default Header;
+
