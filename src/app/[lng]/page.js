@@ -1,5 +1,5 @@
+'use client'
 import Home from "../Components/MainHome"
-
 
 function page() {
   return (

@@ -102,6 +102,7 @@ function Footer({lng}) {
                 <span>{t("footer.copyright_reserved")}</span>
               </p>
               <div className="social">
+                <Link href={`/${lng}/impressum`}>Impressum</Link>
                 <Link href={`/${lng}/privacy-policy`}>{t("footer.privacy_policy")}</Link>
                 <Link href={`/${lng}/terms-of-service`}>{t("footer.terms_of_service")}</Link>
               </div>

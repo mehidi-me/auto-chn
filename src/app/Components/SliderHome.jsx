@@ -61,7 +61,7 @@ function SliderHome({t}) {
         </div>
         <div>
           <div className="slider-card">
-            <img src="/images/8.jpg" alt="" />
+            <img src="/images/6.jpg" alt="" />
             <div className="content">
             <h3>{t(`sections.0.slider.slides.2.title`)}</h3>
               <p>

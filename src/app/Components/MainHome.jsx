@@ -3,9 +3,9 @@ import SliderHome from "./SliderHome";
 import Header from "./Header";
 import Features from "./Features";
 import FormContact from "./FormContact";
-import dynamic from "next/dynamic";
 
-const ScrollReveal = dynamic(() => import("scrollreveal"), { ssr: false });
+
+// import ScrollReveal from 'scrollreveal';
 import { useEffect } from "react";
 import { useParams } from "next/navigation";
 import { useTranslation } from "../i18n/client";
@@ -15,37 +15,45 @@ import Footer from "./Footer";
 export default function Home() {
   const params = useParams();
   const { t } = useTranslation(params?.lng);
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     ScrollReveal({
-  //       reset: false,
-  //       distance: "60px",
-  //       duration: 1200,
-  //       delay: 30,
-  //     });
 
-  //     // Set up ScrollReveal for various elements
-  //     ScrollReveal().reveal("main .content h1", {
-  //       delay: 10,
-  //       origin: "bottom",
-  //     });
-  //     ScrollReveal().reveal("main .content h2", {
-  //       delay: 50,
-  //       origin: "bottom",
-  //     });
-  //     ScrollReveal().reveal("main .content button", {
-  //       delay: 50,
-  //       origin: "bottom",
-  //     });
-  //     ScrollReveal().reveal(".title-1 h2", { delay: 10, origin: "bottom" });
-  //     ScrollReveal().reveal(".title-1 p", { delay: 50, origin: "bottom" });
-  //     ScrollReveal().reveal(".feature .ico", { delay: 30, origin: "left" });
-  //     ScrollReveal().reveal(".feature h5", { delay: 90, origin: "left" });
-  //     ScrollReveal().reveal(".form-card", { delay: 50, origin: "bottom" });
-  //     ScrollReveal().reveal("footer .wraper", { delay: 50, origin: "bottom" });
-  //   }
-  // }, []);
-  const order_link = params?.lng == 'en' ? "https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123" : "https://order.auto-china.com/configurations/x/xo/v15?ref=EFFECT&locale=de"
+  useEffect(() => {
+    async function animate() {
+      const ScrollReveal = (await import("scrollreveal")).default;
+
+      const sr = ScrollReveal({
+        reset: false,
+        distance: "60px",
+        duration: 1200,
+        delay: 30,
+      });
+
+      // Set up ScrollReveal for various elements
+      sr.reveal("main .content h1", {
+        delay: 10,
+        origin: "bottom",
+      });
+      sr.reveal("main .content h2", {
+        delay: 50,
+        origin: "bottom",
+      });
+      sr.reveal("main .content button", {
+        delay: 50,
+        origin: "bottom",
+      });
+      sr.reveal(".title-1 h2", { delay: 10, origin: "bottom" });
+      sr.reveal(".title-1 p", { delay: 50, origin: "bottom" });
+      sr.reveal(".feature .ico", { delay: 30, origin: "left" });
+      sr.reveal(".feature h5", { delay: 90, origin: "left" });
+      sr.reveal(".form-card", { delay: 50, origin: "bottom" });
+      sr.reveal("footer .wraper", { delay: 50, origin: "bottom" });
+    }
+    animate();
+  }, []);
+
+  const order_link =
+    params?.lng == "en"
+      ? "https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123"
+      : "https://order.auto-china.com/configurations/x/xo/v15?ref=EFFECT&locale=de";
 
   return (
     <div>
@@ -105,7 +113,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer t={t} lng={params.lng}/>
+      <Footer t={t} lng={params.lng} />
     </div>
   );
 }
