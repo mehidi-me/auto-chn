@@ -61,6 +61,8 @@ function Features({t}) {
         { label: 'Seats', value: 'Heated and ventilated front seats' },
         { label: 'Roof', value: 'Panoramic glass sunroof' },
         { label: 'Parking aids', value: 'Front and rear sensors, 360 camera, reversing camera, Automatic Parking Assistance System' },
+        { label: 'Parking aids', value: 'Front and rear sensors, 360 camera, reversing camera, Automatic Parking Assistance System' },
+        { label: 'Parking aids', value: 'Front and rear sensors, 360 camera, reversing camera, Automatic Parking Assistance System' },
       ],
     },
     {

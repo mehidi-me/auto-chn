@@ -1,11 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "../i18n/client";
+import Link from "next/link";
 
 
-export default  function Header({t}) {
+export default  function Header({lng}) {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuActive, setIsMenuActive] = useState(false);
-  
+  const { t } = useTranslation(lng);
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleScroll = () => {
@@ -18,7 +20,7 @@ export default  function Header({t}) {
       };
     }
   }, []);
-
+const order_link = lng == 'en' ? "https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123" : "https://order.auto-china.com/configurations/x/xo/v15?ref=EFFECT&locale=de"
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive);
   };
@@ -40,21 +42,21 @@ export default  function Header({t}) {
           </a>
         </div>
         <div className="logo">
-          <a href="#">
+          <Link href="/">
             <img src="/images/logo.png" alt="Logo" />
-          </a>
+          </Link>
         </div>
         <div className="links">
-          <a href="#" onClick={toggleMenu}>
+          <Link href="/" onClick={toggleMenu}>
             {t('header.navigation.0.text')}
-          </a>
-          <a href="#specs" onClick={toggleMenu}>
+          </Link>
+          <a href="/#specs" onClick={toggleMenu}>
           {t('header.navigation.1.text')}
           </a>
           <a href="https://shop.auto-china.com/" onClick={toggleMenu}>
           {t('header.navigation.2.text')}
           </a>
-          <a href="#contactus">
+          <a href={order_link}>
             <button onClick={toggleMenu}> {t('header.navigation.3.text')}</button>
           </a>
         </div>

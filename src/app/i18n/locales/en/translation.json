@@ -58,19 +58,19 @@
           {
             "category": "Performance",
             "items": [
-              { "label": "Power", "value": "RWD 220 kW (295 hp)" },
-              { "label": "Torque", "value": "400 Nm (295 lb-ft)" },
-              { "label": "Acceleration", "value": "5.3 sec 0-100 km/h" },
-              { "label": "Max speed", "value": "210 km/h (130 mph)" }
+              { "label": "Power", "value": "4-wheel 495 kW (673 hp)" },
+              { "label": "Torque", "value": "838 Nm (618 lb-ft)" },
+              { "label": "Acceleration", "value": "2.78 sec 0-100 km/h" },
+              { "label": "Max speed", "value": "250 km/h (160 mph)" }
             ],
             "button": { "text": "View more" }
           },
           {
             "category": "Battery",
             "items": [
-              { "label": "Capacity", "value": "73.6 kWh total" },
-              { "label": "Tech", "value": "Li-ion LFP battery (400V type)" },
-              { "label": "Range", "value": "668 km CLTC" },
+              { "label": "Capacity", "value": "101 kWh total" },
+              { "label": "Tech", "value": "Ternary Lithium Battery (800V type)" },
+              { "label": "Range", "value": "800 km CLTC" },
               { "label": "Recuperation", "value": "Yes" },
               { "label": "Heat pump", "value": "Yes" }
             ],
@@ -101,10 +101,15 @@
             "items": [
               { "label": "Center", "value": "16.1\" touchscreen" },
               { "label": "Driver's", "value": "7.1\"" },
-              { "label": "Head-up", "value": "Yes" }
+              { "label": "Head-up", "value": "56\"" }
             ],
             "button": { "text": "View more" }
           },
+          
+
+
+
+
           {
             "category": "Comfort",
             "items": [
@@ -113,6 +118,14 @@
               {
                 "label": "Parking aids",
                 "value": "Front and rear sensors, 360 camera, reversing camera, Automatic Parking Assistance System"
+              },
+              {
+                "label": "Sound System",
+                "value": "25 premium speakers"
+              },
+              {
+                "label": "Soft close",
+                "value": "Yes"
               }
             ],
             "button": { "text": "View more" }
@@ -149,7 +162,7 @@
       "location_uae_address": "Auto China, Umm Suqeim St - Al Quoz, Dubai",
       "about_title": "About Auto China",
       "about_description": "Auto China, with over 20 years of automotive expertise, is the fastest-growing car company in China, with a strong presence in Europe, the Middle East, and beyond. We lead the industry with sleek designs and innovative technology, creating cars that offer both luxury and smart features. Our commitment to excellence drives us to set new standards in performance and style, shaping the future of mobility. Experience the next level of automotive innovation with Auto China.",
-      "copyright_text": "© Copyright 2025 Auto-China.",
+      "copyright_text": "© 2025 Auto-China.",
       "copyright_reserved": "All rights reserved",
       "privacy_policy": "Privacy Policy",
       "terms_of_service": "Terms Of Service"
