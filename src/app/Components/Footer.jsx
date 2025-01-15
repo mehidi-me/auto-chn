@@ -82,16 +82,16 @@ function Footer({lng}) {
             </div>
             <div className="trust">
               <a href="https://g.co/kgs/nskqiQt" target="_blank">
-                <img src="images/google.png" alt="" />
+                <img src="/images/google.png" alt="" />
               </a>
               <a
                 href="https://www.trustpilot.com/review/auto-china.com"
                 target="_blank"
               >
-                <img src="images/Trustpilot Stars.svg" alt="" />
+                <img src="/images/Trustpilot Stars.svg" alt="" />
               </a>
               <a href="https://www.trustedshops.eu">
-                <img src="images/trusted.png" alt="" />
+                <img src="/images/trusted.png" alt="" />
               </a>
             </div>
 
@@ -102,9 +102,9 @@ function Footer({lng}) {
                 <span>{t("footer.copyright_reserved")}</span>
               </p>
               <div className="social">
-                <Link href={`/${lng}/impressum`}>Impressum</Link>
+                <Link href={`/${lng}/imprint`}>Imprint</Link>
                 <Link href={`/${lng}/privacy-policy`}>{t("footer.privacy_policy")}</Link>
-                <Link href={`/${lng}/terms-of-service`}>{t("footer.terms_of_service")}</Link>
+                {/* <Link href={`/${lng}/terms-of-service`}>{t("footer.terms_of_service")}</Link> */}
               </div>
             </div>
           </div>

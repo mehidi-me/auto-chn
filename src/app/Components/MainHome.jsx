@@ -12,6 +12,7 @@ import { useTranslation } from "../i18n/client";
 import Link from "next/link";
 import Footer from "./Footer";
 
+
 export default function Home() {
   const params = useParams();
   const { t } = useTranslation(params?.lng);

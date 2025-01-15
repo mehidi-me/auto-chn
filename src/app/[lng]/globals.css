@@ -896,3 +896,13 @@ footer .about h3 {
 .impressum h3 {
   font-size: 2.4rem;
 }
+
+.tcp {
+  margin-top: 10rem;
+}
+.tcp small {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+}

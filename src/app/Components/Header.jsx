@@ -4,8 +4,8 @@ import { useTranslation } from "../i18n/client";
 import Link from "next/link";
 
 
-export default  function Header({lng}) {
-  const [isSticky, setIsSticky] = useState(false);
+export default  function Header({lng,sticky=false}) {
+  const [isSticky, setIsSticky] = useState(sticky);
   const [isMenuActive, setIsMenuActive] = useState(false);
   const { t } = useTranslation(lng);
   useEffect(() => {
@@ -42,14 +42,14 @@ const order_link = lng == 'en' ? "https://order.auto-china.com/configurations/x/
           </a>
         </div>
         <div className="logo">
-          <Link href="/">
+          <a href="/">
             <img src="/images/logo.png" alt="Logo" />
-          </Link>
+          </a>
         </div>
         <div className="links">
-          <Link href="/" onClick={toggleMenu}>
+          <a href="/" onClick={toggleMenu}>
             {t('header.navigation.0.text')}
-          </Link>
+          </a>
           <a href="/#specs" onClick={toggleMenu}>
           {t('header.navigation.1.text')}
           </a>

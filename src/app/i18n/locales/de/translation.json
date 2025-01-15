@@ -59,27 +59,21 @@
           {
             "category": "Leistung",
             "items": [
-              { "label": "Leistung", "value": "Heckantrieb 220 kW (295 PS)" },
-              { "label": "Drehmoment", "value": "400 Nm" },
-              {
-                "label": "Beschleunigung",
-                "value": " 0-100 km/h in 5,3 Sekunden"
-              },
-              { "label": "Höchstgeschwindigkeit", "value": "210 km/h" }
+              { "label": "Power", "value": "4-wheel 495 kW (673 hp)" },
+              { "label": "Torque", "value": "838 Nm (618 lb-ft)" },
+              { "label": "Acceleration", "value": "2.78 sec 0-100 km/h" },
+              { "label": "Max speed", "value": "250 km/h (160 mph)" }
             ],
             "button": { "text": "Mehr erfahren" }
           },
           {
             "category": "Batterie",
             "items": [
-              { "label": "Kapazität", "value": "73,6 kWh" },
-              {
-                "label": "Technologie",
-                "value": "Li-Ion LFP Batterie (400V Typ)"
-              },
-              { "label": "Reichweite", "value": "668 km CLTC" },
-              { "label": "Rekuperation", "value": "Ja" },
-              { "label": "Wärmepumpe", "value": "Ja" }
+              { "label": "Capacity", "value": "101 kWh total" },
+              { "label": "Tech", "value": "Ternary Lithium Battery (800V type)" },
+              { "label": "Range", "value": "800 km CLTC" },
+              { "label": "Recuperation", "value": "Yes" },
+              { "label": "Heat pump", "value": "Yes" }
             ],
             "button": { "text": "Mehr erfahren" }
           },
@@ -108,7 +102,7 @@
             "items": [
               { "label": "Zentral", "value": "16.1\" touchscreen" },
               { "label": "Fahrer", "value": "7.1\"" },
-              { "label": "Head-up-Display", "value": "Ja" }
+              { "label": "Head-up", "value": "56\"" }
             ],
             "button": { "text": "Mehr erfahren" }
           },
@@ -120,6 +114,14 @@
               {
                 "label": "Parkhilfen",
                 "value": " Front- und Rücksensoren, 360°-Kamera, Rückfahrkamera, Automatisches Parkassistenzsystem"
+              },
+              {
+                "label": "Sound System",
+                "value": "25 premium speakers"
+              },
+              {
+                "label": "Soft close",
+                "value": "Yes"
               }
             ],
             "button": { "text": "Mehr erfahren" }
@@ -163,6 +165,10 @@
       "copyright_reserved": "All rights reserved",
       "privacy_policy": "Privacy Policy",
       "terms_of_service": "Terms Of Service"
-    }
+    },
+
+    "impressum" : " <section class='tcp'> <div class='container'> <p> <small>Impressum</small><br><br> <b>Angaben gemäß § 5 TMG:</b><br> Auto China<br> Umm Suqeim - Al Quoz<br> Dubai, United Arab Emirates<br><br> <b>Kontakt:</b> <br> Telefon: +971 58 572 8686 <br> E-Mail: impressum@auto-china.com<br><br> <b>Vertreten durch:</b> <br> Die Geschäftsführung von Auto China<br><br><br> <small>Haftungsausschluss:</small> <br> <b>Haftung für Inhalte</b> <br> Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. <br> Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br> <b>Haftung für Links</b> <br> Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br><br> <b>Urheberrecht</b> <br> Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht der Vereinigten Arabischen Emirate. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. <br><br> <b>Streitbeilegung</b> <br> Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href='https://ec.europa.eu/consumers/odr/'>https://ec.europa.eu/consumers/odr/</a> Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br><br> <b>Stand: Januar 2025</b> </p> </div> </section>",
+
+    "privacy_policy":"<section class='tcp'> <div class='container'> <p> <small>Datenschutzrichtlinie für Auto China</small><br><br> <b>Einleitung</b><br> Willkommen bei Auto China (\"wir,\" \"uns\" oder \"unser\"). Ihre Privatsphäre ist uns wichtig, und wir verpflichten uns, die personenbezogenen Daten, die Sie mit uns teilen, zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen erfassen, verwenden und sichern, wenn Sie unsere Website <a href='https://auto-china.com'>https://auto-china.com</a> (\"Website\") besuchen. <br> Durch den Zugriff auf oder die Nutzung unserer Website stimmen Sie den in dieser Datenschutzrichtlinie beschriebenen Praktiken zu. Wenn Sie nicht einverstanden sind, nutzen Sie bitte unsere Website nicht.<br><br><br> <small>Informationen, die wir erfassen</small><br><br> <b>1. Personenbezogene Daten</b><br> Name <br> E-Mail-Adresse<br> Telefonnummer<br> Versand- und Rechnungsadressen<br> Zahlungsinformationen (für Einkäufe)<br><br> <b>2. Nicht personenbezogene Daten</b><br> Wir erfassen automatisch bestimmte Informationen, wenn Sie unsere Website besuchen, darunter: <br> IP-Adresse<br> Browsertyp<br> Gerätetyp<br> Besuchte Seiten<br> Verweisende URL<br> Uhrzeit und Datum des Zugriffs<br><br> <b>3. Cookies und Tracking-Technologien</b><br> Wir verwenden Cookies und ähnliche Tracking-Technologien, um Ihre Erfahrung auf unserer Website zu verbessern. Dazu können gehören: <br> Sitzungscookies, um Ihren Login-Status aufrechtzuerhalten<br> Analyse-Cookies, um die Leistung der Website zu überwachen<br> Werbe-Cookies, um personalisierte Werbung bereitzustellen<br><br><br> <small>Wie wir Ihre Informationen verwenden</small> Wir verwenden die gesammelten Informationen für folgende Zwecke: <br><br> <b>1. Zur Bereitstellung von Dienstleistungen </b> <br> Bearbeitung Ihrer Bestellungen und Zahlungen <br> Lieferung von Produkten und Dienstleistungen <br> Beantwortung Ihrer Anfragen <br><br> <b>2. Zur Verbesserung unserer Website </b> <br> Analyse von Nutzungsmustern zur Verbesserung der Benutzererfahrung <br> Überwachung der Website-Leistung <br><br> <b>3. Marketing und Werbung</b><br> Bereitstellung personalisierter Werbung über Google Ads <br> Information über neue Produkte, Dienstleistungen oder Werbeaktionen <br><br> <b>4. Einhaltung gesetzlicher Verpflichtungen</b><br> Erfüllung rechtlicher und regulatorischer Anforderungen <br><br><br> <small>Dienste von Drittanbietern</small> <br><br> <b>1. Google Analytics</b> <br> Wir verwenden Google Analytics, um den Website-Verkehr zu verfolgen und zu analysieren. Google Analytics sammelt Daten wie: <br> Besuchte Seiten <br> Verweildauer auf der Website<br> Benutzerinteraktionen<br> Diese Informationen helfen uns, das Nutzerverhalten zu verstehen und unsere Website zu verbessern. Google Analytics kann Cookies verwenden, um Daten zu erfassen. Weitere Informationen finden Sie in der Datenschutzrichtlinie von Google. <br><br> <b>2. Google Ads</b><br> Wir verwenden Google Ads, um personalisierte Werbung basierend auf Ihrem Browsing-Verhalten bereitzustellen. Google Ads kann Cookies und andere Technologien verwenden, um zielgerichtete Anzeigen bereitzustellen. Sie können Ihre Anzeigenpräferenzen über die Google-Anzeigeneinstellungen verwalten. <br><br> <b>Weitergabe Ihrer Informationen</b> <br> Wir verkaufen, vermieten oder tauschen Ihre personenbezogenen Daten nicht. Wir können Ihre Informationen jedoch in folgenden Fällen mit Dritten teilen: <br> Mit Dienstleistern, die uns bei der Verwaltung unserer Website unterstützen <br> Zur Einhaltung gesetzlicher Verpflichtungen <br> Zum Schutz der Rechte und Sicherheit unserer Nutzer <br><br><br> <small>Ihre Rechte und Wahlmöglichkeiten </small> Sie haben folgende Rechte in Bezug auf Ihre personenbezogenen Daten: <br> <br> <b>1. Zugriff und Berichtigung</b><br> Sie können Zugriff auf oder Berichtigung Ihrer personenbezogenen Daten verlangen. <br><br> <b>2. Opt-Out</b> <br> Sie können Cookies über Ihre Browsereinstellungen deaktivieren. <br> Widerspruch gegen Google Analytics durch Installation des Google Analytics Opt-Out Browser Add-On. <br> Verwaltung von Anzeigenpräferenzen über die Google-Anzeigeneinstellungen. <br><br> <b>3. Löschung von Daten</b> <br> Sie können die Löschung Ihrer personenbezogenen Daten beantragen, indem Sie uns kontaktieren. <br><br> <b>Datensicherheit</b><br> Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Ihre personenbezogenen Daten zu schützen. Allerdings ist keine Methode der Datenübertragung über das Internet 100 % sicher. Wir können keine absolute Sicherheit garantieren. <br><br> <b>Datenschutz von Kindern</b><br> Unsere Website richtet sich nicht an Kinder unter 13 Jahren. Wir sammeln nicht wissentlich personenbezogene Daten von Kindern. <br><br> <b>Änderungen dieser Datenschutzrichtlinie</b><br> Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit dem aktualisierten Datum oben veröffentlicht.<br><br><br> <small>Kontakt</small> Wenn Sie Fragen oder Bedenken zu dieser Datenschutzrichtlinie oder unseren Datenpraktiken haben, kontaktieren Sie uns bitte unter: <br><br> <b>Auto China</b><br> E-Mail: support@auto-china.com <br> Adresse: Auto China - Umm Suqeim - Al Quoz - Dubai - United Arab Emirates </p> </div> </section>"
   }
   

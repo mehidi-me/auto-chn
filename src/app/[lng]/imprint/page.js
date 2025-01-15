@@ -8,7 +8,7 @@ async function page({ params: { lng } }) {
     <>
     <Header lng={lng} sticky={true} />
 
-<p dangerouslySetInnerHTML={{ __html: t('privacy_policy') }}></p>
+<p dangerouslySetInnerHTML={{ __html: t('impressum') }}></p>
     <Footer lng={lng} />
     </>
   );
