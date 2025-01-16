@@ -906,3 +906,67 @@ footer .about h3 {
   font-weight: 600;
   line-height: 1;
 }
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  padding-right: 2rem;
+  border: 1px solid #ffffff87;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.lang-switch i {
+  font-size: 2rem;
+  color: white;
+}
+.lang-switch-wrap {
+  position: relative;
+}
+.lang-switch-wrap .lang {
+  position: absolute;
+  background: white;
+  width: 100%;
+  z-index: 9999;
+  border-radius: 1rem;
+  top: 6rem;
+  box-shadow: #00000022 0px 8px 24px;
+  display: none;
+}
+.lang.active {
+  display: block;
+}
+.lang-switch-wrap .lang p {
+  padding: 0.5rem 1rem;
+  color: var(--primary-text);
+  border-bottom: 1px solid #00000015;
+  cursor: pointer;
+  display: block;
+}
+.lang-switch-wrap .lang p:last-child {
+  border: unset !important;
+}
+
+@media (max-width: 720px) {
+  .social {
+    gap: 0.5rem;
+  }
+  .lang-switch {
+    padding: 0;
+    padding: 0 0.5rem;
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+  .lang-switch i {
+    display: none;
+  }
+  .lang-switch-wrap .lang {
+    width: 10rem;
+    top: 4rem;
+  }
+}

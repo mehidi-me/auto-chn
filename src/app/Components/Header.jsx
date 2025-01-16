@@ -2,11 +2,12 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "../i18n/client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-
-export default  function Header({lng,sticky=false}) {
+export default function Header({ lng, sticky = false }) {
   const [isSticky, setIsSticky] = useState(sticky);
   const [isMenuActive, setIsMenuActive] = useState(false);
+  const [isLangActive, setIsLangActive] = useState(false);
   const { t } = useTranslation(lng);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -20,11 +21,22 @@ export default  function Header({lng,sticky=false}) {
       };
     }
   }, []);
-const order_link = lng == 'en' ? "https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123" : "https://order.auto-china.com/configurations/x/xo/v15?ref=EFFECT&locale=de"
+  const order_link =
+    lng == "en"
+      ? "https://order.auto-china.com/configurations/x/xo/v15?ref=ABC123"
+      : "https://order.auto-china.com/configurations/x/xo/v15?ref=EFFECT&locale=de";
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive);
   };
+  const toggleLang = () => {
+    setIsLangActive(!isLangActive);
+  };
+  const router = useRouter();
+  const { pathname, asPath, query, locale } = router;
+  const changeLang = (lng) => {
+    router.push({ pathname, query }, asPath, { lng });
 
+  }
   return (
     <header
       className={`${isSticky ? "sticky" : ""} ${isMenuActive ? "active" : ""}`}
@@ -40,6 +52,16 @@ const order_link = lng == 'en' ? "https://order.auto-china.com/configurations/x/
           <a href="https://wa.me/+971585728686">
             <i className="uil uil-whatsapp" />
           </a>
+          <div className="lang-switch-wrap">
+            <div className="lang-switch" onClick={toggleLang}>
+              <i className="uil uil-english-to-chinese" />
+              {lng == "en" ? "En" : "De"}
+            </div>
+            <div className={`lang ${isLangActive ? "active" : ""}`}>
+              <Link href={`/en`}><p onClick={toggleLang}>English</p></Link>
+              <Link href={`/de`}><p onClick={toggleLang}>German</p></Link>
+            </div>
+          </div>
         </div>
         <div className="logo">
           <a href="/">
@@ -48,16 +70,19 @@ const order_link = lng == 'en' ? "https://order.auto-china.com/configurations/x/
         </div>
         <div className="links">
           <a href="/" onClick={toggleMenu}>
-            {t('header.navigation.0.text')}
+            {t("header.navigation.0.text")}
           </a>
           <a href="/#specs" onClick={toggleMenu}>
-          {t('header.navigation.1.text')}
+            {t("header.navigation.1.text")}
           </a>
           <a href="https://shop.auto-china.com/" onClick={toggleMenu}>
-          {t('header.navigation.2.text')}
+            {t("header.navigation.2.text")}
           </a>
           <a href={order_link}>
-            <button onClick={toggleMenu}> {t('header.navigation.3.text')}</button>
+            <button onClick={toggleMenu}>
+              {" "}
+              {t("header.navigation.3.text")}
+            </button>
           </a>
         </div>
         <div className="toogle-menu" onClick={toggleMenu}>
@@ -69,5 +94,3 @@ const order_link = lng == 'en' ? "https://order.auto-china.com/configurations/x/
     </header>
   );
 }
-
-
