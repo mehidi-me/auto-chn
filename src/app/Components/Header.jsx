@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "../i18n/client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function Header({ lng, sticky = false }) {
   const [isSticky, setIsSticky] = useState(sticky);
@@ -31,12 +31,7 @@ export default function Header({ lng, sticky = false }) {
   const toggleLang = () => {
     setIsLangActive(!isLangActive);
   };
-  const router = useRouter();
-  const { pathname, asPath, query, locale } = router;
-  const changeLang = (lng) => {
-    router.push({ pathname, query }, asPath, { lng });
-
-  }
+  const pathname = usePathname()
   return (
     <header
       className={`${isSticky ? "sticky" : ""} ${isMenuActive ? "active" : ""}`}
@@ -58,8 +53,9 @@ export default function Header({ lng, sticky = false }) {
               {lng == "en" ? "En" : "De"}
             </div>
             <div className={`lang ${isLangActive ? "active" : ""}`}>
-              <Link href={`/en`}><p onClick={toggleLang}>English</p></Link>
-              <Link href={`/de`}><p onClick={toggleLang}>German</p></Link>
+            
+              <Link href={pathname.replace(`/${lng}`, `/en`)}><p onClick={toggleLang}>English</p></Link>
+              <Link href={pathname.replace(`/${lng}`, `/de`)}><p onClick={toggleLang}>German</p></Link>
             </div>
           </div>
         </div>
